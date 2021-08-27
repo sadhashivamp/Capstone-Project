@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: grey;
+}
+
+.header .links {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+.center {
+  text-align: center;
+}
+.showcase {
+  background: url("./assets/bg1.jpg") no-repeat center/cover;
+  height: 800px;
+}
+
+.showcase .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.showcase .overlay h1 {
+  font-size: 50px;
+}
+.showcase .overlay p {
+  font-size: 20px;
+}
+
+.grid {
+  padding: 50px;
+}
+.grid img {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  width: 400px;
+  height: 200px;
+}
+
+.grid h3 {
+  text-align: center;
+  font-size: 30px;
+  color: gray;
+  padding-bottom: 20px;
+}
+
+.grid .grid-items div {
+  width: 500px;
+  margin: 20px 0;
+
+  border-radius: 20px;
+}
+.grid .grid-items {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid .grid-items div h4 {
+  font-size: 22px;
+  padding: 2px 0;
+}
+.grid .grid-items div p {
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #333;
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer ul li {
+  padding: 10px 0;
+}
+.footer ul li button {
+  padding: 8px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.footer ul li button:hover {
+  background-color: rgba(126, 252, 0, 0.603);
+}
+
+/* login */
+
+.login .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login .form input {
+  margin: 5px 0;
+  width: 400px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.login .form input ::placeholder {
+  font-weight: 800;
+  color: black;
+}
+.login .form button {
+  background-color: rgba(0, 0, 255, 0.667);
+  padding: 8px;
+
+  border-radius: 10px;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.login .form button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
